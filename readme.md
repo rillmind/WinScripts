@@ -7,4 +7,4 @@
 [Acesse o Markdown com o script aqui](./src/Chris_Titus.md)
 
 ## Executáveis
-Na pasta [src](./src/) tem 2 executáveis para Windows que abrem o terminal direto nos scripts.
+Na pasta '[src](./src/)' tem 2 executáveis para Windows que abrem o terminal direto nos scripts.
