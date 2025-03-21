@@ -14,7 +14,7 @@ $opcao = Read-Host "Digite o número da opção"
 switch ($opcao) {
     '1' {
         $url = "https://github.com/rillmind/WinScripts/releases/download/Installer/HP.Smart.Installer.exe"
-        $destino = "$env:USERPROFILE\Downloads\raulScript\HPEasyStart-15.8.1.exe"
+        $destino = "$env:USERPROFILE\Downloads\HPEasyStart-15.8.1.exe"
         Write-Host "Baixando o arquivo para $destino..." -ForegroundColor Green
         Invoke-WebRequest -Uri $url -OutFile $destino
         Write-Host "Download concluído!" -ForegroundColor Green
