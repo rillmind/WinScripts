@@ -46,15 +46,16 @@ function menuScripts {
 while ($true) {
 	menu
 
-	$opcao = Read-Host "Digite o número da opção"
+	Write-Host "Digite o número da opção"
+	$opcao = [System.Console]::ReadKey($true).KeyChar
 
 	switch ($opcao) {
 		'1' {
 			while ($true) {
-				
 				menuImpressora
 
-				$opcaoImpressora = Read-Host "Digite o número da opção"
+				Write-Host "Digite o número da opção"
+				$opcaoImpressora = [System.Console]::ReadKey($true).KeyChar
 
 				switch ($opcaoImpressora) {
 					'1' {
@@ -99,7 +100,8 @@ while ($true) {
 			while ($true) {
 				menuScripts
 
-				$opcaoScript = Read-Host "Digite o número da opção"
+				Write-Host "Digite o número da opção"
+				$opcaoScript = [System.Console]::ReadKey($true).KeyChar
 
 				switch ($opcaoScript) {
 					'1' {
