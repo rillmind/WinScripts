@@ -3,7 +3,7 @@
 Abra o powershell e digite a seguinte linha
 
 ```sh
-irm https://massgrave.dev/get | iex
+irm https://get.activated.win | iex
 ```
 
 As opções estão em inglês, mas é fácil identificar.
