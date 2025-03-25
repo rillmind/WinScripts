@@ -62,7 +62,7 @@ while ($true) {
 						$url = "https://github.com/rillmind/WinScripts/releases/download/Installer/HP.Smart.Installer.exe"
 						$destino = "$env:USERPROFILE\Downloads\HPEasyStart-15.8.1.exe"
 						Write-Host "Baixando o arquivo para $destino..." -ForegroundColor Green
-						Invoke-WebRequest -Uri $url -OutFile $destino
+						cmd /c "curl.exe -L --output `"$destino`" `"$url`""
 						Write-Host "Download concluído!" -ForegroundColor Green
 						Start-Sleep -Seconds 1
 						break
@@ -71,7 +71,7 @@ while ($true) {
 						$url = "https://github.com/rillmind/WinScripts/releases/download/410/HP_410-420.exe"
 						$destino = "$env:USERPROFILE\Downloads\HP_410.exe"
 						Write-Host "Baixando o arquivo para $destino..." -ForegroundColor Green
-						Invoke-WebRequest -Uri $url -OutFile $destino
+						cmd /c "curl.exe -L --output `"$destino`" `"$url`""
 						Write-Host "Download concluído!" -ForegroundColor Green
 						break
 					}
@@ -79,7 +79,7 @@ while ($true) {
 						$url = "https://github.com/rillmind/WinScripts/releases/download/580/HP_580-590.exe"
 						$destino = "$env:USERPROFILE\Downloads\HP_580.exe"
 						Write-Host "Baixando o arquivo para $destino..." -ForegroundColor Green
-						Invoke-WebRequest -Uri $url -OutFile $destino
+						cmd /c "curl.exe -L --output `"$destino`" `"$url`""
 						Write-Host "Download concluído!" -ForegroundColor Green
 						break
 					}
